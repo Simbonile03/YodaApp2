@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YodaApp2.Views.MainPage"
+             Title="MainPage">
+   
+    <StackLayout Padding="20">
+        <Entry Placeholder="Enter your text..." x:Name="InputEntry"/>
+        <Button Text="Generate Yoda-like Response" Clicked="GenerateResponse_Clicked" />
+        <Label Text="{Binding YodaResponse}" />
+        <Button Text="Get Fun Fact" Clicked="GetFunFact_Clicked" />
+    </StackLayout>
+</ContentPage>
